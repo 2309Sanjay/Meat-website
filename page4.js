@@ -1,5 +1,5 @@
 
-let nav = document.querySelector("nav");
+let nav = document.querySelector(".nav-pills");
 
 flag = false;
 
