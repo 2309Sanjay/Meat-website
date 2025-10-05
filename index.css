@@ -1,0 +1,1121 @@
+/* font-family: "Gajraj One", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Dancing+Script:wght@400..700&family=Gajraj+One&family=Goblin+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Thai:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arya:wght@400;700&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Risque&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+main {
+    padding-top: 105px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+/* Nav */
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to top, #173956, #3284cc);
+    padding: 5px 0px;
+    color: ghostwhite;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+
+    * {
+        margin: 0px;
+    }
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav>div:first-child img {
+    height: 100px;
+    width: 100px;
+}
+
+nav h1 {
+    font-weight: bold;
+}
+
+/* div 2 */
+
+nav>div:nth-child(2) i {
+    font-size: 2rem;
+}
+
+nav>div:nth-child(2) p {
+    font-size: 1rem;
+    font-weight: 250;
+}
+
+nav>div:nth-child(2) a {
+    font-size: 0.8rem;
+    font-weight: 250;
+}
+
+/* div 3 */
+
+.nav-bar {
+    width: 35%;
+    justify-content: space-between;
+}
+
+nav a {
+    color: ghostwhite;
+    position: relative;
+}
+
+.nav-bar a:hover {
+    color: gold;
+}
+
+.nav-bar a::before {
+    content: "";
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    background-color: gold;
+    height: 2px;
+    transition: all 1s;
+}
+
+.nav-bar a:hover::before {
+    width: 100%;
+}
+
+.nav-bar a {
+    font-size: 1.2rem;
+}
+
+/* div 4 */
+
+nav>div:last-child {
+    gap: 25%;
+}
+
+nav>div:last-child a {
+    font-size: 2.2rem;
+}
+
+nav>div:last-child a:link {
+    color: lawngreen;
+}
+
+nav>div:last-child a:hover {
+    color: gold;
+}
+
+nav>div:last-child a:active {
+    color: green;
+}
+
+/* SECTION */
+
+section>div {
+
+
+    * {
+        margin: 0px;
+    }
+}
+
+section>div>h1 {
+    text-align: center;
+    color: rgb(7, 7, 90);
+    font-weight: bold;
+}
+
+/* ------------------------------- */
+
+/* HOME-PAGE */
+.home {
+    height: 87vh;
+    scroll-margin-top: 105px;
+}
+
+.home>div:first-child {
+    height: 90%;
+    display: flex;
+    overflow: hidden;
+}
+
+.home>div:first-child>div {
+    transition: all 1s;
+}
+
+.home>div:first-child img {
+    height: 100%;
+    width: 100vw;
+}
+
+/* div 2 */
+
+.home>div:nth-child(2) {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.home p {
+    width: 20px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 25px;
+}
+
+.home p:first-child {
+    width: 60px;
+    background-color: rgb(7, 7, 90);
+}
+
+.home>div:last-child {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+}
+
+.home>div:last-child label {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Gajraj One", sans-serif;
+    cursor: pointer;
+    color: ghostwhite;
+}
+
+
+/* ABOUT PAGE */
+
+.about {
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    scroll-margin-top: 110px;
+    padding: 0px 10% 50px;
+
+    * {
+        margin: 0px;
+    }
+}
+
+
+.animals {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.animals>div>div {
+    height: 180px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.animals img {
+    height: 60%;
+    width: 70%;
+}
+
+.animals p {
+    color: rgb(75, 74, 74);
+    font-size: 2rem;
+}
+
+/* Animal meat */
+
+.animal_meat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.animal_meat>div {
+    min-width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    transition: all 1s;
+}
+
+.animal_meat img {
+    height: 100%;
+    width: 100%;
+}
+
+.chick>div:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.chick>div:nth-child(2) {
+    grid-column: 2/4;
+}
+
+.chick>div:nth-child(3) {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.chick>div:nth-child(4) {
+    grid-row: 2/4;
+}
+
+.chick>div:nth-child(5) {
+    grid-row: 2/4;
+}
+
+/* -------------------------------------- */
+
+#mutton {
+    grid-template-columns: auto auto auto;
+}
+
+/* ------------------------------------------ */
+
+.beef>div:nth-child(2) {
+    grid-area: 1/3/3/5;
+}
+
+/* ------------------------------------------ */
+
+.pork>div:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.pork>div:nth-child(2) {
+    grid-area: 1/2/2/3;
+}
+
+.pork>div:nth-child(3) {
+    grid-row: 1/3;
+}
+
+/* ------------------------------------------ */
+.fish {
+    grid-template-areas: "one two three"
+        "four two five";
+}
+
+.fish>div:first-child {
+    grid-area: one;
+}
+
+.fish>div:nth-child(2) {
+    grid-area: two;
+}
+
+.fish>div:nth-child(3) {
+    grid-area: three;
+}
+
+.fish>div:nth-child(4) {
+    grid-area: four;
+}
+
+.fish>div:nth-child(5) {
+    grid-area: five;
+}
+
+/* ---------------------------------------------------- */
+
+/* PRODUCT PAGE */
+
+.product {
+    height: 85vh;
+    scroll-margin-top: 130px;
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.product>h1 {
+    text-align: center;
+    color: rgb(7, 7, 90);
+}
+
+.product>div {
+    display: flex;
+    gap: 50px;
+}
+
+/* 1st container in product */
+
+.product>div>div:first-child {
+    width: 65%;
+    height: 500px;
+    background-image: url("./cardboard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product>div>div:first-child>div {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.circle {
+    width: 120px;
+    height: 200px;
+    border-radius: 30%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -60px;
+}
+
+.circle1 {
+    background-image: url("https://t3.ftcdn.net/jpg/02/43/80/06/360_F_243800603_OSCgOJ9TEEWxv5g00CQImKp4V9Usn4u1.jpg");
+    transform: rotateZ(-60deg);
+    top: 10%;
+    left: 18%;
+}
+
+.circle2 {
+    background-image: url("https://zhatka.farm/cdn/shop/files/Bone-in-Goat-Meat-on_chopping_board.jpg?v=1734384489&width=1946");
+    transform: rotateZ(0deg);
+    top: -10%;
+}
+
+.circle3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrG_qgT_6MBcEuVd0fse6--DWgQnxDKDEBaswQhiuTQntrP3l1pGvrvAzd0qcb2iSQZbo&usqp=CAU");
+    transform: rotateZ(60deg);
+    right: 18%;
+    top: 10%;
+}
+
+.circle4 {
+    background-image: url("https://foresthillfarm.ie/wp-content/uploads/2016/03/pork-product-new.png");
+    transform: rotateZ(123deg);
+    right: 18%;
+    bottom: 10%;
+}
+
+.circle5 {
+    background-image: url("https://img.freepik.com/free-photo/side-view-fresh-raw-fishes-brown-wooden-cutting-board-dark-mix-colors-table-with-free-space_179666-18208.jpg");
+    transform: rotateZ(-180deg);
+    bottom: -10%;
+}
+
+.circle6 {
+    background-image: url("https://media.istockphoto.com/id/470981381/photo/fresh-seafood.jpg?s=612x612&w=0&k=20&c=KTg6I9SsAm7UShn0dpWmaVv-MKLi0LgI48CcpftPDYQ=");
+    transform: rotateZ(237deg);
+    bottom: 10%;
+    left: 18%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    17% {
+        transform: rotateZ(60deg);
+    }
+
+    34% {
+        transform: rotateZ(120deg);
+    }
+
+    51% {
+        transform: rotateZ(180deg);
+    }
+
+    68% {
+        transform: rotateZ(240deg);
+    }
+
+    85% {
+        transform: rotateZ(300deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+/* 2nd container in Product */
+
+.product>div>div:last-child {
+    width: 35%;
+    /* height: 500px; */
+    display: flex;
+    overflow: hidden;
+}
+
+.product>div>div:last-child>div {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product h3 {
+    text-align: center;
+}
+
+
+/* SERVICES PAGE */
+
+.services {
+    height: 70vh;
+    scroll-margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+
+.boxx {
+    display: flex;
+    overflow: hidden;
+}
+
+.boxx>div {
+    min-width: 100%;
+    padding: 0px 10%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 350px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.box>div {
+    overflow: hidden;
+}
+
+@keyframes scooty {
+    0% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translate(350px);
+    }
+}
+
+
+
+
+/* --------------------------------------------- */
+
+/* SHOP PAGE */
+
+.shop {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    padding: 0px 10%;
+    scroll-margin-top: 120px;
+}
+
+
+
+.shop>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.shopCard {
+    height: 300px;
+    width: 240px;
+    border-radius: 50px;
+    background-image: linear-gradient(to top, #173956, #3284cc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 10px;
+}
+
+.shopCard>div {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: -30px;
+    object-fit: cover;
+    /* clip-path: path('M 10,120 L 60,120 A 10,10 0,0,0 70,110 L 70,70 A 10,10 0,0,1 80,60 L 130,60 A 10,10 0,0,0 140,50 L 140,10 A 10,10 0,0,1 150,0 L 290,0 A 10,10 0,0,1 300,10 L 300,230 A 10,10 0,0,1 290,240 L 200,240 A 10,10 0,0,0 190,250 L 190,290 A 10,10 0,0,1 180,300 L 90,300 A 10,10 0,0,1 80,290 L 80,250 A 10,10 0,0,0 70,240 L 40,240 L 10,240 A 10,10 0,0,1 0,230 L 0,130 A 10,10 0,0,1 10,120 Z'); */
+    clip-path: path('M 15,80 L 35,80 A 10,10 0,0,0 45,70 L 45,45 A 15,15 0,0,1 60,30 L 90,30 A 10,10 0,0,0 100,20 L 100,10 A 10,10 0,0,1 110,0 L 180,0 A 20,20 0,0,1 200,20 L 200,140 A 20,20 0,0,1 180,160 L 130,160 A 15,15 0,0,0 115,175 L 115,185 A 15,15 0,0,1 100,200 L 50,200 A 5,5 0,0,1 45,195 A 15,15 0,0,0 30,180 L 20,180 A 20,20 0,0,1 0,160 L 0,95 A 15,15 0,0,1 15,80 Z');
+}
+
+.shop>div>div:nth-child(1)>div {
+    background-image: url("https://www.meatemporium.com.au/cdn/shop/products/JA_AME_Rolledporkloin_31.jpg?v=1631617038");
+}
+
+.shop>div>div:nth-child(2)>div {
+    background-image: url("https://zhatka.farm/cdn/shop/files/Bone-in-Goat-Meat-on_chopping_board.jpg?v=1734384489&width=1946");
+}
+
+.shop>div>div:nth-child(3)>div {
+    background-image: url("https://www.primegourmet.ae/cdn/shop/collections/australian-black-angus-beef-238270.jpg?v=1698216016");
+}
+
+.shopCard button {
+    padding: 8px 20%;
+    background-image: linear-gradient(to right, #4a86b6, rgb(174, 21, 239));
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    color: ghostwhite;
+}
+
+.shopCard p {
+    position: absolute;
+    color: ghostwhite;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.shopCard>p:nth-child(3) {
+    left: 20px;
+    top: 30px;
+}
+
+.shopCard>p:last-child {
+    right: 10px;
+    bottom: 85px;
+}
+
+.shopFooter {
+    align-self: flex-end;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+}
+
+.shopFooter button {
+    padding: 10px 50px;
+    background-color: rgb(222, 160, 5);
+    color: ghostwhite;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.shopFooter p {
+    color: rgb(222, 160, 5);
+    font-size: 4rem;
+}
+
+/* --------------------------------------------------------------- */
+
+.contact {
+    height: 50vh;
+    background-color: #38658d;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.contact>div:first-child img {
+    height: 150px;
+    width: 150px;
+}
+
+.contact h1 {
+    color: ghostwhite;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.contact p {
+    color: ghostwhite;
+    font-size: 1.2rem;
+}
+
+.contact>div {
+    display: grid;
+    gap: 20px;
+}
+
+.contact i {
+    font-size: 1.2rem;
+    color: ghostwhite;
+}
+
+
+.contact>div>div {
+    display: grid;
+    gap: 10px;
+}
+
+.contact>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact>div:last-child {
+    gap: 20px;
+}
+
+.contact>div:last-child p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.contact>div:last-child>div {
+    display: grid;
+    gap: 20px;
+}
+
+.information>div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.information>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow i {
+    font-size: 2.5rem;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 280px) and (max-width: 450px) {
+
+
+    nav {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav>div:first-child {
+        gap: 0px;
+    }
+
+    nav>div:first-child img {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav h1 {
+        font-size: 1rem;
+    }
+
+    .nav-bar {
+        width: 50vw;
+        position: fixed;
+        flex-direction: column;
+        background-color: #173956;
+        padding: 20px;
+        top: 73px;
+        left: 100%;
+        transition: all 2s;
+    }
+    .nav-bar>a:active{
+        color: gold;
+    }
+
+    nav>div:nth-child(2) {
+        position: absolute;
+        right: 4.5rem;
+        top: 2.2rem;
+    }
+
+    nav>div:nth-child(2) i {
+        font-size: 1rem;
+    }
+
+    nav>div:nth-child(2) div {
+        display: none;
+    }
+
+    nav i {
+        font-size: 1rem;
+    }
+
+    nav>div:last-child {
+        gap: 10px;
+    }
+
+
+    main {
+        padding-top: 70px;
+    }
+
+    .home {
+        height: 40vh;
+    }
+
+    .home>div:last-child {
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 5%;
+    }
+
+    .home>div:last-child label {
+        font-size: 1.3rem;
+    }
+
+    .home p {
+        height: 3px;
+    }
+
+
+    /* ABOUT */
+
+
+    .about {
+        height: 70vh;
+        padding: 3%;
+        scroll-margin-top: 75px;
+    }
+
+    .animals {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .animals>div>div {
+        height: 80px;
+        width: 80px;
+    }
+
+    .animals img {
+        height: 75%;
+    }
+
+    .animals p {
+        font-size: 10px;
+    }
+
+    .animal_meat>div {
+        height: 100%;
+        gap: 2px;
+    }
+
+    .mutton>div:last-child {
+        height: 108%;
+    }
+
+
+
+
+    /* PRODUCT */
+
+    .product {
+        height: 86vh;
+        padding: 0 3%;
+        gap: 5%;
+        scroll-margin-top: 75px;
+    }
+
+    .product>div {
+        flex-direction: column;
+    }
+
+    .product>div>div:first-child {
+        width: 100%;
+        height: 280px;
+    }
+
+    .product>div>div:last-child {
+        width: 100%;
+    }
+
+    .product>div>div:first-child>div {
+        height: 88%;
+        width: 80%;
+    }
+
+    .circle {
+        width: 60px;
+        height: 95px;
+        background-position: -35px;
+    }
+
+    .circle1 {
+        transform: rotateZ(-60deg);
+        top: 10%;
+        left: 3%;
+    }
+
+    .circle2 {
+        transform: rotateZ(0deg);
+        top: -10%;
+    }
+
+    .circle3 {
+        transform: rotateZ(60deg);
+        right: 3%;
+        top: 10%;
+    }
+
+    .circle4 {
+        background-image: url("https://media.istockphoto.com/id/640275316/photo/raw-pork-ribs.jpg?s=612x612&w=0&k=20&c=k9wRCwFGHg_zjl2FPM2GfNXnjmSvztqo4OAskLqsfp0=");
+        transform: rotateZ(123deg);
+        right: 3%;
+        bottom: 10%;
+    }
+
+    .circle5 {
+        transform: rotateZ(-180deg);
+        bottom: -10%;
+    }
+
+    .circle6 {
+        transform: rotateZ(237deg);
+        bottom: 10%;
+        left: 3%;
+    }
+
+
+
+    /* SERVIES */
+
+    .services {
+        height: 100vh;
+        scroll-margin-top: 75px;
+        gap: 1%;
+        padding: 0px 3%;
+    }
+
+
+    .boxx {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .boxx>div {
+        width: 100%;
+        padding: 0px;
+        min-height: 400px;
+        display: flex;
+        justify-content: unset;
+        gap: 20px;
+        flex-direction: column;
+        height: 90vh;
+        padding: 20px 0px;
+    }
+
+    .box {
+        width: 280px;
+        height: 180px;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .box:hover {
+        transform: scale(1.05);
+    }
+
+    .box img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .box h4 {
+        font-size: 1rem;
+    }
+
+    .box p {
+        font-size: 0.8rem;
+    }
+
+    .box>div {
+        overflow: hidden;
+    }
+
+    @keyframes scooty {
+        0% {
+            transform: translateX(-30px);
+        }
+
+        100% {
+            transform: translate(350px);
+        }
+    }
+
+
+    /* SHOP */
+
+    .shop {
+        height: 152vh;
+        gap: 20px;
+        justify-content: unset;
+        scroll-margin-top: 75px;
+    }
+
+    .shop>div {
+        justify-content: unset;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .shopFooter {
+        align-self: unset;
+    }
+
+    .shopFooter p {
+        display: none;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        grid-template-columns: auto;
+        gap: 20px;
+        height: 120vh;
+        scroll-margin-top: 72px;
+    }
+
+    .contact>div {
+        display: grid;
+        gap: 2px;
+    }
+
+    .contact>div:first-child {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact>div:first-child img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .contact>div>div {
+        gap: 0px;
+    }
+
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact h2 {
+        font-size: 1rem;
+    }
+
+    .contact p {
+        font-size: 0.9rem;
+    }
+
+    .contact>div {
+        display: grid;
+        gap: 10px;
+    }
+
+    .contact>div {
+        display: grid;
+        gap: 2px;
+    }
+
+    .contact>div:last-child p {
+        font-size: 0.9rem;
+    }
+
+    .contact i {
+        font-size: 1.2rem;
+    }
+
+    .contact>div:last-child>div {
+        display: grid;
+        gap: 3px;
+    }
+
+    .information img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .follow>div {
+        display: flex;
+        gap: 20px;
+    }
+
+}

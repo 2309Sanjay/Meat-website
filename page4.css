@@ -1,0 +1,618 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arya:wght@400;700&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Risque&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+main {
+    padding-top: 105px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+/* Nav */
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to top, #173956, #3284cc);
+    padding: 5px 0px;
+    color: ghostwhite;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+
+    * {
+        margin: 0px;
+    }
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav>div:first-child img {
+    height: 100px;
+    width: 100px;
+}
+
+nav h1 {
+    font-weight: bold;
+}
+
+/* div 2 */
+
+nav>div:nth-child(2) i {
+    font-size: 2rem;
+}
+
+nav>div:nth-child(2) p {
+    font-size: 1rem;
+    font-weight: 250;
+}
+
+nav>div:nth-child(2) a {
+    font-size: 0.8rem;
+    font-weight: 250;
+}
+
+/* div 3 */
+
+nav>div:nth-child(3) {
+    width: 35%;
+    justify-content: space-between;
+}
+
+nav a {
+    color: ghostwhite;
+    position: relative;
+}
+
+nav>div:nth-child(3) a:hover {
+    color: gold;
+}
+
+nav>div:nth-child(3) a::before {
+    content: "";
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    background-color: gold;
+    height: 2px;
+    transition: all 1s;
+}
+
+nav>div:nth-child(3) a:hover::before {
+    width: 100%;
+}
+
+nav>div:nth-child(3) a {
+    font-size: 1.2rem;
+}
+
+/* div 4 */
+
+nav>div:last-child {
+    gap: 25%;
+}
+
+nav>div:last-child a {
+    font-size: 2.2rem;
+}
+
+nav>div:last-child a:link {
+    color: lawngreen;
+}
+
+nav>div:last-child a:hover {
+    color: gold;
+}
+
+nav>div:last-child a:active {
+    color: green;
+}
+
+/* SECTION */
+
+section>div {
+
+
+    * {
+        margin: 0px;
+    }
+}
+
+section>div>h1 {
+    text-align: center;
+    color: rgb(7, 7, 90);
+    font-weight: bold;
+}
+
+/* ------------------------------- */
+
+.payment {
+    height: 80vh;
+    padding: 10% 10% 0px;
+}
+
+.payment>div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.paybox {
+    min-height: 50px;
+    width: 400px;
+    background-color: rgb(237, 233, 233);
+    border-radius: 25px;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* -------------------------------- */
+.paybox>div:first-child {
+    height: 100px;
+    transition: all 1s linear;
+}
+
+.p-type {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    background-color: rgb(237, 233, 233);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.p-type>input {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.p-type>p:last-child {
+    transform: translateX(120px) rotateZ(90deg);
+    font-size: 2rem;
+}
+
+/* -------------------------------- */
+.payment-type {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 40px;
+    padding: 10px;
+    transform: translateY(-150px);
+    transition: all 1s linear;
+}
+
+.paybox img {
+    height: 25px;
+    width: 80px;
+}
+
+/* -------------------------------- */
+
+.line {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(228, 228, 228), rgb(195, 197, 199), rgb(175, 173, 173));
+    height: 4px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgb(224, 224, 228);
+}
+
+/* -------------------------------- */
+
+.cashOn {
+    display: flex;
+    padding: 20px 10px 0px;
+    gap: 20px;
+}
+
+.cashOn input {
+    transform: scale(1.5);
+}
+
+.cashOn p {
+    font-size: 1.2rem;
+}
+
+/* -------------------------------- */
+button {
+    background-color: #AEB724EB;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+}
+
+button:active {
+    background-color: black;
+}
+
+/* ----------------------------------------------------------------------------- */
+.password {
+    width: 450px;
+    height: 280px;
+    background-color: rgb(237, 233, 233);
+    color: black;
+    box-shadow: 3px 3px 10px lightgrey;
+    border-radius: 30px;
+    border: 2px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 20px;
+    transform: translateY(-1000px);
+    transition: all 1s;
+    margin: auto;
+    position: relative;
+    z-index: 20;
+}
+
+.password>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password label {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.password input {
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.contact {
+    height: 50vh;
+    background-color: #38658d;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.contact>div:first-child img {
+    height: 150px;
+    width: 150px;
+}
+
+.contact h1 {
+    color: ghostwhite;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.contact p {
+    color: ghostwhite;
+    font-size: 1.2rem;
+}
+
+.contact>div {
+    display: grid;
+    gap: 20px;
+}
+
+.contact i {
+    font-size: 1.2rem;
+    color: ghostwhite;
+}
+
+
+
+
+
+.contact>div>div {
+    display: grid;
+    gap: 10px;
+}
+
+.contact>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact>div:last-child {
+    gap: 20px;
+}
+
+.contact>div:last-child p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.contact>div:last-child>div {
+    display: grid;
+    gap: 20px;
+}
+
+.information>div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.information>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow i {
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 280px) and (max-width: 450px) {
+
+
+    nav {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav>div:first-child {
+        gap: 0px;
+    }
+
+    nav>div:first-child img {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav h1 {
+        font-size: 1rem;
+    }
+
+    .nav-bar {
+        width: 50vw;
+        position: fixed;
+        flex-direction: column;
+        background-color: #173956;
+        padding: 20px;
+        top: 73px;
+        left: 100%;
+        transition: all 2s;
+    }
+
+    .nav-bar>a:active {
+        color: gold;
+    }
+
+    nav>div:nth-child(2) {
+        position: absolute;
+        right: 4.5rem;
+        top: 2.2rem;
+    }
+
+    nav>div:nth-child(2) i {
+        font-size: 1rem;
+    }
+
+    nav>div:nth-child(2) div {
+        display: none;
+    }
+
+    nav i {
+        font-size: 1rem;
+    }
+
+    nav>div:last-child {
+        gap: 10px;
+    }
+
+
+    main {
+        padding-top: 70px;
+    }
+
+
+    /* PAYMENT */
+
+    .payment {
+        height: 45vh;
+        padding: 10% 5% 0px;
+    }
+
+    .payment>div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+
+    .payment h3 {
+        font-size: 15px;
+    }
+
+    .paybox {
+        min-height: 150px;
+        width: 100%;
+        background-color: rgb(237, 233, 233);
+        border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .p-type>input {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .cashOn input {
+        transform: scale(1.05);
+    }
+
+    .paybox p {
+        font-size: 12px;
+    }
+
+    .p-type>p:last-child {
+        transform: translateX(90px) rotateZ(90deg);
+        font-size: 20px;
+    }
+
+    .paybox img {
+        height: 20px;
+        width: 70px;
+    }
+
+    .password {
+        width: 90%;
+        height: 200px;
+        border-radius: 15px;
+        padding: 0px 5px;
+        transform: translateY(-1000px);
+    }
+
+    .password label {
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .password input {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid lightgrey;
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    button {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+    /* CONTACT */
+
+    .contact {
+        grid-template-columns: auto;
+        gap: 20px;
+        height: 120vh;
+        scroll-margin-top: 72px;
+    }
+
+    .contact>div {
+        display: grid;
+        gap: 2px;
+    }
+
+    .contact>div:first-child {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact>div:first-child img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .contact>div>div {
+        gap: 0px;
+    }
+
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact h2 {
+        font-size: 1rem;
+    }
+
+    .contact p {
+        font-size: 0.9rem;
+    }
+
+    .contact>div {
+        display: grid;
+        gap: 10px;
+    }
+
+    .contact>div {
+        display: grid;
+        gap: 2px;
+    }
+
+    .contact>div:last-child p {
+        font-size: 0.9rem;
+    }
+
+    .contact i {
+        font-size: 1.2rem;
+    }
+
+    .contact>div:last-child>div {
+        display: grid;
+        gap: 3px;
+    }
+
+    .information img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .follow>div {
+        display: flex;
+        gap: 20px;
+    }
+
+
+}

@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Meat website Page 4</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./page4.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <nav class="nav-pills">
+            <div>
+                <img src="./cock.png" alt="nav_cock">
+                <h1>MeaT</h1>
+            </div>
+            <div>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <div>
+                    <p>Address</p>
+                    <a href="https://www.google.com/maps/place/Pallavaram,+Chennai,+Tamil+Nadu/@12.9674756,80.1440511,15z/data=!3m1!4b1!4m6!3m5!1s0x3a525e3510bb6cb3:0x8e59bb4c53bf97bc!8m2!3d12.9675069!4d80.1490955!16zL20vMDl4bXlz?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank">Pallavaram,
+                        Chennai 600043</a>
+                </div>
+            </div>
+            <div class="nav-bar">
+                <a href="file:///C:/Users/SANJAY/Documents/Front-end/projects/Meat%20page/index.html"> Home </a>
+                <a href="#about"> About </a>
+                <a href="#product"> Product </a>
+                <a href="#services"> Service </a>
+                <a href="#shop"> Shop </a>
+                <a href="#contact"> Contact us </a>
+            </div>
+            <div>
+                <a href="file:///C:/Users/SANJAY/Documents/Front-end/projects/Meat%20page/page2.html"><i
+                        class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+
+            </div>
+        </nav>
+
+        <section>
+            <div class="payment">
+                <div>
+                    <h3>Payment method </h3>
+                    <div class="paybox">
+                        <div style="overflow: hidden;">
+                            <div class="p-type">
+                                <input type="radio" id="radio">
+                                <p>Card Payment</p>
+                                <p onclick="dropDown()">></p>
+                            </div>
+                            <div class="payment-type">
+                                <div onclick="google()"><img src="./gpay.png" alt=""></div>
+                                <div onclick="phonepay()"><img src="./phonepay.png" alt=""></div>
+                                <div onclick="paytm()"><img src="paytm.png" alt=""></div>
+                                <div onclick="amazon()"><img src="amazon.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="cashOn">
+                            <input type="radio">
+                            <p>Cash On Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="password" id="password">
+                <div>
+                    <label for="name">Enter Your Name : </label>
+                    <input type="text" name="fanme" id="name">
+                </div>
+
+                <div>
+                    <label for="pass">Enter Your Password : </label>
+                    <input type="password" name="fanme" id="pass">
+                </div>
+                <button onclick="pay()"> Continue To Pay </button>
+            </div>
+
+            </div>
+
+            </div>
+            <div class="contact" id="contact">
+                <div>
+                    <img src="./cock.png" alt="">
+                    <h1> MeaT </h1>
+                </div>
+
+                <div>
+                    <h2> Quick Links </h2>
+                    <div>
+                        <p> Home </p>
+                        <p> About </p>
+                        <p> Product </p>
+                        <p> Services </p>
+                        <p> Shop </p>
+                        <p> Contact us </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2> Product </h2>
+                    <div>
+                        <p> Chicken </p>
+                        <p> Mutton </p>
+                        <p> Beef </p>
+                        <p> Seafood </p>
+                        <p> Pork </p>
+                        <p> Turkey </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="information">
+                        <h2> Information </h2>
+                        <div>
+                            <div><img src="./call.png" alt="">
+                                <p>+91 8939419545</p>
+                            </div>
+
+                            <div><img src="./gmail.png" alt="">
+                                <p>meat@gamil.com</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Pallavaram, Channai</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <h2> Follow us </h2>
+                        <div>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <script src="./page4.js"> </script>
+</body>
+
+</html>

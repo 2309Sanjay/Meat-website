@@ -1,0 +1,703 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arya:wght@400;700&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Risque&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+main {
+    padding-top: 105px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+/* Nav */
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to top, #173956, #3284cc);
+    padding: 5px 0px;
+    color: ghostwhite;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+
+    * {
+        margin: 0px;
+    }
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav>div:first-child img {
+    height: 100px;
+    width: 100px;
+}
+
+nav h1 {
+    font-weight: bold;
+}
+
+/* div 2 */
+
+nav>div:nth-child(2) i {
+    font-size: 2rem;
+}
+
+nav>div:nth-child(2) p {
+    font-size: 1rem;
+    font-weight: 250;
+}
+
+nav>div:nth-child(2) a {
+    font-size: 0.8rem;
+    font-weight: 250;
+}
+
+/* div 3 */
+
+.nav-bar {
+    width: 35%;
+    justify-content: space-between;
+}
+
+nav a {
+    color: ghostwhite;
+    position: relative;
+}
+
+.nav-bar a:hover {
+    color: gold;
+}
+
+.nav-bar a::before {
+    content: "";
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    background-color: gold;
+    height: 2px;
+    transition: all 1s;
+}
+
+.nav-bar a:hover::before {
+    width: 100%;
+}
+
+.nav-bar a {
+    font-size: 1.2rem;
+}
+
+/* div 4 */
+
+nav>div:last-child {
+    gap: 25%;
+}
+
+nav>div:last-child a {
+    font-size: 2.2rem;
+}
+
+nav>div:last-child a:link {
+    color: lawngreen;
+}
+
+nav>div:last-child a:hover {
+    color: gold;
+}
+
+nav>div:last-child a:active {
+    color: green;
+}
+
+/* SECTION */
+
+section>div {
+
+
+    * {
+        margin: 0px;
+    }
+}
+
+section>div>h1 {
+    text-align: center;
+    color: rgb(7, 7, 90);
+    font-weight: bold;
+}
+
+/* ------------------------------- */
+
+.done {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding-bottom: 50px;
+}
+
+.curve {
+    height: 400px;
+    width: 100%;
+    background-color: #00AE36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: payment;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    clip-path: ellipse(65% 100% at top);
+
+}
+
+@keyframes payment {
+    0% {
+        clip-path: ellipse(0% 0% at top);
+    }
+
+    50% {
+        clip-path: ellipse(30% 100% at top);
+    }
+
+    100% {
+        clip-path: ellipse(65% 100% at top);
+    }
+}
+
+/* ------------------------------- */
+.curve h1 {
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.curve h1 span {
+    color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------- */
+.done>div:nth-child(2) {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(620px) translateY(-100px) perspective(1000px);
+    z-index: 2;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.tick {
+    height: 200px;
+    width: 200px;
+    background-color: ghostwhite;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgb(69, 69, 69);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: tick 1s ease-in forwards;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes tick {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.tick i {
+    font-size: 8rem;
+    color: #00AE36;
+    text-shadow: 3px 3px 5px lightgray;
+}
+
+/* ------------------------------- */
+
+.clip {
+    height: 30px;
+    width: 30px;
+    background-color: #00AE36;
+    box-shadow: inset 0.5px -0.5px 3px rgb(55, 55, 55);
+    position: absolute;
+    bottom: -70px;
+    animation: clip 2s ease-in reverse forwards;
+    opacity: 0;
+}
+
+@keyframes clip {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        left: unset;
+        bottom: unset;
+        right: unset;
+        top: unset;
+    }
+}
+
+.clip1 {
+    left: -10px;
+    transform: rotateZ(90deg);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.clip2 {
+
+    left: 50px;
+    transform: rotateZ(90deg);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.clip3 {
+    transform: rotateZ(150deg);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+
+.clip4 {
+    right: -30px;
+    transform: rotateZ(270deg);
+    clip-path: circle(50% at 50% 50%);
+}
+
+.clip5 {
+    top: 150px;
+    left: 100px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.clip6 {
+    left: -10px;
+    top: 56px;
+    transform: rotateZ(90deg);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.clip7 {
+    left: 30px;
+    top: 70px;
+    transform: rotateZ(90deg);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+
+}
+
+.clip8 {
+    bottom: -75px;
+    right: 55px;
+    transform: rotateZ(150deg);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.clip9 {
+    right: 16px;
+    bottom: -15px;
+    transform: rotateZ(270deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.clip10 {
+    top: 90px;
+    left: 0px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.clip11 {
+    left: 12px;
+    top: -6px;
+    transform: rotateZ(90deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+}
+
+.clip12 {
+    right: 0px;
+    top: 36px;
+    transform: rotateZ(90deg);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+
+}
+
+.clip13 {
+    bottom: -9px;
+    right: -30px;
+    transform: rotateZ(150deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.clip14 {
+    right: 18px;
+    bottom: -52px;
+    transform: rotateZ(270deg);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.clip15 {
+    top: 90px;
+    left: -47px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+/* ------------------------------- */
+
+.done>h1 {
+    width: 100%;
+    color: black;
+    font-size: 4rem;
+    animation: success 1s linear forwards;
+}
+
+@keyframes success {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.done>h1>span {
+    color: #00AE36;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+.contact {
+    height: 50vh;
+    background-color: #38658d;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.contact>div:first-child img {
+    height: 150px;
+    width: 150px;
+}
+
+.contact h1 {
+    color: ghostwhite;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.contact p {
+    color: ghostwhite;
+    font-size: 1.2rem;
+}
+
+.contact>div {
+    display: grid;
+    gap: 20px;
+}
+
+.contact i {
+    font-size: 1.2rem;
+    color: ghostwhite;
+}
+
+
+
+
+
+.contact>div>div {
+    display: grid;
+    gap: 10px;
+}
+
+.contact>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact>div:last-child {
+    gap: 20px;
+}
+
+.contact>div:last-child p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.contact>div:last-child>div {
+    display: grid;
+    gap: 20px;
+}
+
+.information>div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.information>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow i {
+    font-size: 2.5rem;
+}
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 280px) and (max-width: 450px) {
+
+
+    nav {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav>div:first-child {
+        gap: 0px;
+    }
+
+    nav>div:first-child img {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav h1 {
+        font-size: 1rem;
+    }
+
+    .nav-bar {
+        width: 50vw;
+        position: fixed;
+        flex-direction: column;
+        background-color: #173956;
+        padding: 20px;
+        top: 73px;
+        left: 100%;
+        transition: all 2s;
+    }
+
+    .nav-bar>a:active {
+        color: gold;
+    }
+
+    nav>div:nth-child(2) {
+        position: absolute;
+        right: 4.5rem;
+        top: 2.2rem;
+    }
+
+    nav>div:nth-child(2) i {
+        font-size: 1rem;
+    }
+
+    nav>div:nth-child(2) div {
+        display: none;
+    }
+
+    nav i {
+        font-size: 1rem;
+    }
+
+    nav>div:last-child {
+        gap: 10px;
+    }
+
+
+    main {
+        padding-top: 70px;
+    }
+
+
+/* ---------------------------------------------------------------------------- */
+    .done {
+        height: 75vh;
+        gap: 5%;
+        padding-bottom: 0px;
+    }
+
+    .curve {
+        height: 300px;
+        width: 100%;
+    }
+
+    @keyframes payment {
+        0% {
+            clip-path: ellipse(0% 0% at top);
+        }
+
+        50% {
+            clip-path: ellipse(40% 100% at top);
+        }
+
+        100% {
+            clip-path: ellipse(75% 100% at top);
+        }
+    }
+
+    /* ------------------------------- */
+    .curve h1 {
+        font-size: 1.5rem;
+    }
+
+    /* ------------------------------- */
+    .done>div:nth-child(2) {
+        height: 100px;
+        width: 100%;
+        transform: translateX(0px) translateY(-80px) perspective(1000px);
+    }
+
+    .tick {
+        height: 100px;
+        width: 100px;
+    }
+
+    .tick i {
+        font-size: 3.5rem;
+    }
+
+    /* -----------------------------------------------------------------------------------------*/
+
+    .clip {
+        display: none;
+    }
+
+    
+    /* --------------------------------------------------------------------------------------- */
+    .done>h1 {
+        width: 100%;
+        color: black;
+        font-size: 1rem;
+        animation: success 1s linear forwards;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        grid-template-columns: auto;
+        gap: 20px;
+        height: 120vh;
+        scroll-margin-top: 72px;
+    }
+
+    .contact>div {
+        display: grid;
+        gap: 2px;
+    }
+
+    .contact>div:first-child {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact>div:first-child img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .contact>div>div {
+        gap: 0px;
+    }
+
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact h2 {
+        font-size: 1rem;
+    }
+
+    .contact p {
+        font-size: 0.9rem;
+    }
+
+    .contact>div {
+        display: grid;
+        gap: 10px;
+    }
+
+    .contact>div {
+        display: grid;
+        gap: 2px;
+    }
+
+    .contact>div:last-child p {
+        font-size: 0.9rem;
+    }
+
+    .contact i {
+        font-size: 1.2rem;
+    }
+
+    .contact>div:last-child>div {
+        display: grid;
+        gap: 3px;
+    }
+
+    .information img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .follow>div {
+        display: flex;
+        gap: 20px;
+    }
+
+
+}

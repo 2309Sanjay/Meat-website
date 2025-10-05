@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Meat website Page 3</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./page3.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <nav class="nav-pills">
+            <div>
+                <img src="./cock.png" alt="nav_cock">
+                <h1>MeaT</h1>
+            </div>
+            <div>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <div>
+                    <p>Address</p>
+                    <a href="https://www.google.com/maps/place/Pallavaram,+Chennai,+Tamil+Nadu/@12.9674756,80.1440511,15z/data=!3m1!4b1!4m6!3m5!1s0x3a525e3510bb6cb3:0x8e59bb4c53bf97bc!8m2!3d12.9675069!4d80.1490955!16zL20vMDl4bXlz?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank">Pallavaram,
+                        Chennai 600043</a>
+                </div>
+            </div>
+            <div class="nav-bar">
+                <a href="file:///C:/Users/SANJAY/Documents/Front-end/projects/Meat%20page/index.html"> Home </a>
+                <a href="#about"> About </a>
+                <a href="#product"> Product </a>
+                <a href="#services"> Service </a>
+                <a href="#shop"> Shop </a>
+                <a href="#contact"> Contact us </a>
+            </div>
+            <div>
+                <a href="file:///C:/Users/SANJAY/Documents/Front-end/projects/Meat%20page/page2.html"><i
+                        class="fa-solid fa-cart-shopping"></i></a>
+                <a href="" onclick="reload()"><i class="fa-solid fa-user"></i></a>
+
+            </div>
+        </nav>
+        <section>
+
+            <div class="placeOrder">
+                <div>
+                    <div class="table">
+                        <div class="title">
+                            <h2>Product</h2>
+                            <h2>Price</h2>
+                            <h2>Quantity</h2>
+                            <h2>Price</h2>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="order-placed chicken">
+                            <div>
+                                <img src="./item-chicken.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹100</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-1)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-1)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div style="justify-content: center;">
+                                <h1 class="total">₹0 </h1>
+                                <p class="remove" onclick="remove('chicken')">x</p>
+                            </div>
+                        </div>
+
+                        <div class="order-placed mutton">
+                            <div>
+                                <img src="./item-mutton.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹150</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-2)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-2)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h1 class="total">₹0</h1>
+                                <p class="remove" onclick="remove('mutton')">x</p>
+                            </div>
+                        </div>
+
+                        <div class="order-placed beef">
+                            <div>
+                                <img src="./item-beef.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹120</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-3)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-3)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h1 class="total">₹0</h1>
+                                <p class="remove" onclick="remove('beef')">x</p>
+                            </div>
+                        </div>
+
+                        <div class="order-placed pork">
+                            <div>
+                                <img src="./item-pork.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹90</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-4)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-4)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h1 class="total">₹0</h1>
+                                <p class="remove" onclick="remove('pork')">x</p>
+                            </div>
+                        </div>
+
+                        <div class="order-placed fish">
+                            <div>
+                                <img src="./item-fish.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹200</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-5)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-5)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h1 class="total">₹0</h1>
+                                <p class="remove" onclick="remove('fish')">x</p>
+                            </div>
+                        </div>
+
+                        <div class="order-placed duck">
+                            <div>
+                                <img src="./item-duck.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹130</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-6)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-6)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h1 class="total">₹0</h1>
+                                <p class="remove" onclick="remove('duck')">x</p>
+                            </div>
+                        </div>
+
+                        <div class="order-placed prawn">
+                            <div>
+                                <img src="./item-prawn.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹80</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-7)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-7)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h1 class="total">₹0</h1>
+                                <p class="remove" onclick="remove('prawn')">x</p>
+                            </div>
+                        </div>
+
+                        <div class="order-placed crab">
+                            <div>
+                                <img src="./item-crab.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹110</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-8)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-8)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h1 class="total">₹0</h1>
+                                <p class="remove" onclick="remove('crab')">x</p>
+                            </div>
+                        </div>
+
+                        <div class="order-placed oyster">
+                            <div>
+                                <img src="./item-oyster.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹300</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-9)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-9)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h1 class="total">₹0</h1>
+                                <p class="remove" onclick="remove('oyster')">x</p>
+                            </div>
+                        </div>
+
+                        <div class="order-placed mussels">
+                            <div>
+                                <img src="./item-mussels.png" alt="">
+                            </div>
+                            <div>
+                                <p class="price">₹250</p>
+                            </div>
+
+                            <div class="order-count">
+                                <div>
+                                    <button onclick="minus(-10)">-</button>
+                                    <h3>0</h3>
+                                    <button onclick="plus(-10)">+</button>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h1 class="total">₹0</h1>
+                                <p class="remove" onclick="remove('mussels')">x</p>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div>
+                                <h1 class="amount">₹0</h1>
+                            </div>
+
+                            <div>
+                                <h3>TOTAL</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <button onclick="order()"> Place Order </button>
+                </div>
+            </div>
+
+            <!-- ---------------------------------------------------------------- -->
+            <div class="contact" id="contact">
+                <div>
+                    <img src="./cock.png" alt="">
+                    <h1> MeaT </h1>
+                </div>
+
+                <div>
+                    <h2> Quick Links </h2>
+                    <div>
+                        <p> Home </p>
+                        <p> About </p>
+                        <p> Product </p>
+                        <p> Services </p>
+                        <p> Shop </p>
+                        <p> Contact us </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2> Product </h2>
+                    <div>
+                        <p> Chicken </p>
+                        <p> Mutton </p>
+                        <p> Beef </p>
+                        <p> Seafood </p>
+                        <p> Pork </p>
+                        <p> Turkey </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="information">
+                        <h2> Information </h2>
+                        <div>
+                            <div><img src="./call.png" alt="">
+                                <p>+91 8939419545</p>
+                            </div>
+
+                            <div><img src="./gmail.png" alt="">
+                                <p>meat@gamil.com</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Pallavaram, Channai</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <h2> Follow us </h2>
+                        <div>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./page2.js"> </script>
+</body>
+
+</html>
