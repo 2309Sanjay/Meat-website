@@ -509,7 +509,7 @@ button:active {
     }
 
     .p-type>p:last-child {
-        transform: translateX(110px) rotateZ(90deg);
+        transform: translateX(100px) rotateZ(90deg);
         font-size: 20px;
     }
 
