@@ -525,7 +525,9 @@ button:active {
         padding: 0px 5px;
         transform: translateY(-1000px);
     }
-
+    .password>div{
+        gap: 5%;
+    }
     .password label {
         width: 50%;
         font-size: 12px;

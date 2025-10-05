@@ -105,25 +105,25 @@ else if (moblieQuery.matches) {
         name = 'sanjay',
             password = 2309;
         console.log(name, password)
-        document.getElementById("password").style = "transform: translateY(-45px)"
+        document.getElementById("password").style = "transform: translateY(-40px)"
     }
     function phonepay() {
         name = 'ajay',
             password = 1403;
         console.log(name, password)
-        document.getElementById("password").style = "transform: translateY(-45px)"
+        document.getElementById("password").style = "transform: translateY(-40px)"
     }
     function paytm() {
         name = 'vasu',
             password = 1979;
         console.log(name, password)
-        document.getElementById("password").style = "transform: translateY(-45px)"
+        document.getElementById("password").style = "transform: translateY(-40px)"
     }
     function amazon() {
         name = 'prabha',
             password = 1981;
         console.log(name, password)
-        document.getElementById("password").style = "transform: translateY(-45px)"
+        document.getElementById("password").style = "transform: translateY(-40px)"
     }
 
 

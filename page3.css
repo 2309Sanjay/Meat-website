@@ -282,7 +282,10 @@ section>div>h1 {
     border-radius: 20px;
     border: none;
 }
-
+.placeOrder>div:last-child>button:active{
+    background-color: black;
+    color: ghostwhite;
+}
 /* ----------------------------------------------------------------------------------- */
 .order-placed {
     display: none;
