@@ -578,7 +578,7 @@ function reload() {
 // ------------------------------------------------------------------
 
 function order() {
-    window.location.href = "file:///C:/Users/SANJAY/Documents/Front-end/projects/Meat%20page/page4.html";
+    window.location.href = "https://2309sanjay.github.io/Meat-website/page4";
 }
 
 
