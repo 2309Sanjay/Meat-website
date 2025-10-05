@@ -566,27 +566,27 @@ section>div>h1 {
 
 /* ---------------------------------------------------------------------------- */
     .done {
-        height: 75vh;
-        gap: 5%;
+        height: 50vh;
+        gap: 0%;
         padding-bottom: 0px;
     }
 
     .curve {
-        height: 300px;
+        height: 180px;
         width: 100%;
     }
 
-    @keyframes payment {
+     @keyframes payment {
         0% {
             clip-path: ellipse(0% 0% at top);
         }
 
         50% {
-            clip-path: ellipse(40% 100% at top);
+            clip-path: ellipse(50% 100% at top);
         }
 
         100% {
-            clip-path: ellipse(75% 100% at top);
+            clip-path: ellipse(110% 100% at top);
         }
     }
 
@@ -599,7 +599,7 @@ section>div>h1 {
     .done>div:nth-child(2) {
         height: 100px;
         width: 100%;
-        transform: translateX(0px) translateY(-80px) perspective(1000px);
+        transform: translateX(0px) translateY(-58px) perspective(1000px);
     }
 
     .tick {
