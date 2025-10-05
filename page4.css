@@ -491,6 +491,10 @@ button:active {
         justify-content: space-between;
     }
 
+    .payment-type>div:active{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
     .p-type>input {
         transform: scale(1.05);
         cursor: pointer;
@@ -505,7 +509,7 @@ button:active {
     }
 
     .p-type>p:last-child {
-        transform: translateX(90px) rotateZ(90deg);
+        transform: translateX(110px) rotateZ(90deg);
         font-size: 20px;
     }
 

@@ -625,9 +625,11 @@ section>div>h1 {
         height: 160px;
         min-width: 100%;
     }
-    .items>div{
+
+    .items>div {
         width: 100%;
     }
+
     .meat_items img {
         height: 100px;
         width: 100%;
@@ -640,6 +642,15 @@ section>div>h1 {
         margin: auto;
     }
 
+    .scroll>label:first-child {
+        left: -20px;
+        top: 100px;
+    }
+
+    .scroll>label:last-child {
+        right: -20px;
+        top: 100px;
+    }
 
     /* ORDERS */
 
