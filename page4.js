@@ -72,7 +72,7 @@ if (lapQuery.matches) {
         if (n.toLowerCase() == name && p == password) {
             document.getElementById("name").value = "";
             document.getElementById("pass").value = "";
-            location.href = "https://2309sanjay.github.io/Meat-website/page5/";
+            location.href = "https://2309sanjay.github.io/Meat-website/page5";
         } else {
             document.getElementById("name").style = "border: 2px solid crimson";
             document.getElementById("pass").style = "border: 2px solid crimson";
@@ -134,7 +134,7 @@ else if (moblieQuery.matches) {
         if (n.toLowerCase() == name && p == password) {
             document.getElementById("name").value = "";
             document.getElementById("pass").value = "";
-            location.href = "https://2309sanjay.github.io/Meat-website/page5/";
+            location.href = "https://2309sanjay.github.io/Meat-website/page5";
         } else {
             document.getElementById("name").style = "border: 2px solid crimson";
             document.getElementById("pass").style = "border: 2px solid crimson";
