@@ -599,7 +599,7 @@ section>div>h1 {
     .done>div:nth-child(2) {
         height: 100px;
         width: 100%;
-        transform: translateX(0px) translateY(-68px) perspective(1000px);
+        transform: translateX(0px) translateY(-52px) perspective(1000px);
     }
 
     .tick {
