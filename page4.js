@@ -69,7 +69,7 @@ if (lapQuery.matches) {
         let n = document.getElementById("name").value,
             p = document.getElementById("pass").value;
         console.log(name, password)
-        if (n.toLowerCase() == name && p == password) {
+        if (n.trim().toLowerCase() == name && p == password) {
             document.getElementById("name").value = "";
             document.getElementById("pass").value = "";
             location.href = "https://2309sanjay.github.io/Meat-website/page5";
@@ -131,7 +131,7 @@ else if (moblieQuery.matches) {
         let n = document.getElementById("name").value,
             p = document.getElementById("pass").value;
         console.log(name, password)
-        if (n.toLowerCase() == name && p == password) {
+        if (n.trim().toLowerCase() == name && p == password) {
             document.getElementById("name").value = "";
             document.getElementById("pass").value = "";
             location.href = "https://2309sanjay.github.io/Meat-website/page5";
