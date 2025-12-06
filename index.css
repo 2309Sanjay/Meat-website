@@ -210,10 +210,10 @@ section>div>h1 {
 /* ABOUT PAGE */
 
 .about {
-    height: 105vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 20px;
     scroll-margin-top: 110px;
     padding: 0px 10% 50px;
 
@@ -251,7 +251,7 @@ section>div>h1 {
 
 .animal_meat {
     width: 100%;
-    height: 100%;
+    height: 500px;
     display: flex;
     overflow: hidden;
 }
@@ -349,12 +349,13 @@ section>div>h1 {
 /* PRODUCT PAGE */
 
 .product {
-    height: 85vh;
+    min-height: 60vh;
     scroll-margin-top: 130px;
     padding: 0px 10%;
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 20px;
+    padding-bottom: 30px;
 }
 
 .product>h1 {
@@ -482,7 +483,6 @@ section>div>h1 {
 
 .product>div>div:last-child {
     width: 35%;
-    /* height: 500px; */
     display: flex;
     overflow: hidden;
 }
@@ -505,7 +505,7 @@ section>div>h1 {
 /* SERVICES PAGE */
 
 .services {
-    height: 70vh;
+    min-height: 50vh;
     scroll-margin-top: 120px;
     display: flex;
     flex-direction: column;
@@ -566,16 +566,14 @@ section>div>h1 {
 /* SHOP PAGE */
 
 .shop {
-    height: 70vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10%;
+    gap: 20px;
     padding: 0px 10%;
     scroll-margin-top: 120px;
 }
-
-
 
 .shop>div {
     display: flex;
@@ -670,15 +668,33 @@ section>div>h1 {
 /* --------------------------------------------------------------- */
 
 .contact {
-    height: 50vh;
+    min-height: 10vh;
     background-color: #38658d;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
     padding: 5%;
 }
 
-.contact>div:first-child img {
+.contact>div {
+    display: flex;
+}
+
+.footer1 {
+    width: 20%;
+    align-items: center;
+}
+
+.footer2 {
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.footer3 {
+    width: 30%;
+    flex-direction: column;
+}
+
+.footer1 img {
     height: 150px;
     width: 150px;
 }
@@ -700,11 +716,6 @@ section>div>h1 {
     font-size: 1.2rem;
 }
 
-.contact>div {
-    display: grid;
-    gap: 20px;
-}
-
 .contact i {
     font-size: 1.2rem;
     color: ghostwhite;
@@ -712,33 +723,38 @@ section>div>h1 {
 
 
 .contact>div>div {
-    display: grid;
-    gap: 10px;
-}
-
-.contact>div:first-child {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.contact>div:last-child {
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer2 {
+    gap: 50px;
+}
+
+.footer3 {
     gap: 20px;
 }
 
-.contact>div:last-child p {
+.footer3 p {
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-.contact>div:last-child>div {
-    display: grid;
+.footer3>div {
+    display: flex;
     gap: 20px;
 }
 
 .information>div {
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
@@ -788,7 +804,8 @@ section>div>h1 {
         left: 100%;
         transition: all 2s;
     }
-    .nav-bar>a:active{
+
+    .nav-bar>a:active {
         color: gold;
     }
 
@@ -903,8 +920,8 @@ section>div>h1 {
     }
 
     .product>div>div:first-child>div {
-        height: 88%;
-        width: 80%;
+        height: 250px;
+        width: 250px;
     }
 
     .circle {
@@ -953,7 +970,7 @@ section>div>h1 {
     /* SERVIES */
 
     .services {
-        height: 100vh;
+        min-height: 90vh;
         scroll-margin-top: 75px;
         gap: 1%;
         padding: 0px 3%;
@@ -1048,29 +1065,36 @@ section>div>h1 {
     /* CONTACT */
 
     .contact {
-        grid-template-columns: auto;
-        gap: 20px;
-        height: 120vh;
+        flex-direction: column;
+        gap: 25px;
         scroll-margin-top: 72px;
+        padding: 10%;
     }
 
     .contact>div {
-        display: grid;
-        gap: 2px;
+        display: flex;
+        width: 100%;
     }
 
-    .contact>div:first-child {
+    .footer1 {
         flex-direction: row;
         align-items: center;
     }
 
-    .contact>div:first-child img {
-        height: 80px;
-        width: 80px;
+    .footer2 {
+        justify-content: unset;
+        flex-wrap: wrap;
     }
 
-    .contact>div>div {
-        gap: 0px;
+    .footer3 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .footer1 img {
+        height: 80px;
+        width: 80px;
     }
 
     .contact h1 {
@@ -1085,17 +1109,7 @@ section>div>h1 {
         font-size: 0.9rem;
     }
 
-    .contact>div {
-        display: grid;
-        gap: 10px;
-    }
-
-    .contact>div {
-        display: grid;
-        gap: 2px;
-    }
-
-    .contact>div:last-child p {
+    .footer3 p {
         font-size: 0.9rem;
     }
 
@@ -1103,8 +1117,371 @@ section>div>h1 {
         font-size: 1.2rem;
     }
 
-    .contact>div:last-child>div {
-        display: grid;
+    .footer3>div {
+        display: flex;
+        gap: 10px;
+    }
+
+    .information img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .follow>div {
+        display: flex;
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 450px) and (max-width: 800px) {
+
+
+    nav {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav>div:first-child {
+        gap: 0px;
+    }
+
+    nav>div:first-child img {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav h1 {
+        font-size: 1rem;
+    }
+
+    .nav-bar {
+        width: 50vw;
+        position: fixed;
+        flex-direction: column;
+        background-color: #173956;
+        padding: 20px;
+        top: 73px;
+        left: 100%;
+        transition: all 2s;
+    }
+
+    .nav-bar>a:active {
+        color: gold;
+    }
+
+    nav>div:nth-child(2) {
+        position: absolute;
+        left: 7.5rem;
+        top: 1rem;
+    }
+
+    nav>div:nth-child(2) i {
+        font-size: 1rem;
+    }
+
+    nav>div:nth-child(2) p {
+        font-size: 12px;
+    }
+
+    nav>div:nth-child(2) a {
+        font-size: 10px;
+    }
+
+    nav i {
+        font-size: 1.3rem;
+    }
+
+    nav>div:last-child {
+        gap: 10px;
+    }
+
+
+    main {
+        padding-top: 70px;
+    }
+
+    /* HOME PAGE */
+    .home {
+        height: 60vh;
+    }
+
+    .home>div:last-child {
+        position: absolute;
+        width: 100%;
+        top: 35%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 5%;
+    }
+
+    .home>div:last-child label {
+        font-size: 1.8rem;
+    }
+
+    .home p {
+        height: 3px;
+    }
+
+
+    /* ABOUT */
+
+
+    .about {
+        height: 75vh;
+        padding: 5%;
+        scroll-margin-top: 75px;
+    }
+
+    .animals {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .animals>div>div {
+        height: 80px;
+        width: 80px;
+    }
+
+    .animals img {
+        height: 75%;
+    }
+
+    .animals p {
+        font-size: 10px;
+    }
+
+    .animal_meat>div {
+        height: 100%;
+        gap: 2px;
+    }
+
+    .mutton>div:last-child {
+        height: 108%;
+    }
+
+
+
+
+    /* PRODUCT */
+
+    .product {
+        min-height: 86vh;
+        padding: 0 5%;
+        gap: 5%;
+        scroll-margin-top: 75px;
+        padding-bottom: 30px;
+    }
+
+    .product>div {
+        flex-direction: column;
+    }
+
+    .product>div>div:first-child {
+        width: 100%;
+        height: 350px;
+    }
+
+    .product>div>div:last-child {
+        width: 100%;
+    }
+
+    .product>div>div:last-child>div {
+        padding: 0 10%;
+    }
+
+    .product>div>div:first-child>div {
+        height: 400px;
+        width: 400px;
+    }
+
+    .circle {
+        width: 85px;
+        height: 140px;
+        background-position: -35px;
+    }
+
+    .circle1 {
+        transform: rotateZ(-62deg);
+        top: 15%;
+        left: 7%;
+    }
+
+    .circle2 {
+        transform: rotateZ(0deg);
+        top: -5%;
+    }
+
+    .circle3 {
+        transform: rotateZ(62deg);
+        right: 8%;
+        top: 15%;
+    }
+
+    .circle4 {
+        background-image: url("https://media.istockphoto.com/id/640275316/photo/raw-pork-ribs.jpg?s=612x612&w=0&k=20&c=k9wRCwFGHg_zjl2FPM2GfNXnjmSvztqo4OAskLqsfp0=");
+        transform: rotateZ(117deg);
+        right: 7%;
+        bottom: 14%;
+    }
+
+    .circle5 {
+        transform: rotateZ(-180deg);
+        bottom: -5%;
+    }
+
+    .circle6 {
+        transform: rotateZ(241deg);
+        bottom: 14%;
+        left: 8%;
+    }
+
+
+
+    /* SERVIES */
+
+    .services {
+        min-height: 65vh;
+        scroll-margin-top: 75px;
+        gap: 1%;
+        padding: 0px 30px;
+    }
+
+
+    .boxx {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .boxx>div {
+        width: 100%;
+        padding: 0px;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: row;
+        height: 51vh;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+    }
+
+    .box {
+        width: 280px;
+        height: 180px;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .box:hover {
+        transform: scale(1.05);
+    }
+
+    .box img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .box h4 {
+        font-size: 1rem;
+    }
+
+    .box p {
+        font-size: 0.8rem;
+    }
+
+    .box>div {
+        overflow: hidden;
+    }
+
+    @keyframes scooty {
+        0% {
+            transform: translateX(-30px);
+        }
+
+        100% {
+            transform: translate(350px);
+        }
+    }
+
+
+    /* SHOP */
+
+    .shop {
+        min-height: 110vh;
+        gap: 20px;
+        padding-bottom: 30px;
+        justify-content: unset;
+        scroll-margin-top: 75px;
+    }
+
+    .shop>div {
+        justify-content: center;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .shopFooter {
+        align-self: unset;
+    }
+
+    .shopFooter p {
+        display: none;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        scroll-margin-top: 72px;
+    }
+
+    .contact>div {
+        min-width: 10%;
+    }
+
+    .footer3 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer1 img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact h2 {
+        font-size: 1rem;
+    }
+
+    .contact p {
+        font-size: 0.9rem;
+    }
+
+    .footer3 p {
+        font-size: 0.9rem;
+    }
+
+    .contact i {
+        font-size: 1.2rem;
+    }
+
+    .footer3>div {
+        display: flex;
         gap: 3px;
     }
 
@@ -1118,4 +1495,394 @@ section>div>h1 {
         gap: 20px;
     }
 
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+    /* NAV BAR */
+
+    .nav-bar a {
+        font-size: 1rem;
+    }
+
+    nav>div:last-child a {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+    /* HOME PAGE */
+    .home {
+        height: 60vh;
+    }
+
+    .home>div:last-child {
+        position: absolute;
+        width: 100%;
+        top: 35%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 5%;
+    }
+
+    .home>div:last-child label {
+        font-size: 1.8rem;
+    }
+
+    .home p {
+        height: 3px;
+    }
+
+
+    /* ABOUT */
+
+
+    .about {
+        height: 75vh;
+        padding: 5%;
+        scroll-margin-top: 75px;
+    }
+
+    .animals {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .animals>div>div {
+        height: 80px;
+        width: 80px;
+    }
+
+    .animals img {
+        height: 75%;
+    }
+
+    .animals p {
+        font-size: 10px;
+    }
+
+    .animal_meat>div {
+        height: 100%;
+        gap: 2px;
+    }
+
+    .mutton>div:last-child {
+        height: 108%;
+    }
+
+
+
+
+    /* PRODUCT */
+
+    .product {
+        min-height: 86vh;
+        padding: 0 5%;
+        gap: 5%;
+        scroll-margin-top: 75px;
+        padding-bottom: 30px;
+    }
+
+    .product>div {
+        flex-direction: column;
+    }
+
+    .product>div>div:first-child {
+        width: 100%;
+        height: 350px;
+    }
+
+    .product>div>div:last-child {
+        width: 100%;
+    }
+
+    .product>div>div:last-child>div {
+        padding: 0 10%;
+    }
+
+    .product>div>div:first-child>div {
+        height: 400px;
+        width: 400px;
+    }
+
+    .circle {
+        width: 85px;
+        height: 140px;
+        background-position: -35px;
+    }
+
+    .circle1 {
+        transform: rotateZ(-62deg);
+        top: 15%;
+        left: 7%;
+    }
+
+    .circle2 {
+        transform: rotateZ(0deg);
+        top: -5%;
+    }
+
+    .circle3 {
+        transform: rotateZ(62deg);
+        right: 8%;
+        top: 15%;
+    }
+
+    .circle4 {
+        background-image: url("https://media.istockphoto.com/id/640275316/photo/raw-pork-ribs.jpg?s=612x612&w=0&k=20&c=k9wRCwFGHg_zjl2FPM2GfNXnjmSvztqo4OAskLqsfp0=");
+        transform: rotateZ(117deg);
+        right: 7%;
+        bottom: 14%;
+    }
+
+    .circle5 {
+        transform: rotateZ(-180deg);
+        bottom: -5%;
+    }
+
+    .circle6 {
+        transform: rotateZ(241deg);
+        bottom: 14%;
+        left: 8%;
+    }
+
+
+
+    /* SERVIES */
+
+    .services {
+        min-height: 65vh;
+        scroll-margin-top: 75px;
+        gap: 1%;
+        padding: 0px 30px;
+    }
+
+
+    .boxx {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .boxx>div {
+        width: 100%;
+        padding: 0px;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: row;
+        height: 51vh;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+    }
+
+    .box {
+        width: 280px;
+        height: 180px;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .box:hover {
+        transform: scale(1.05);
+    }
+
+    .box img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .box h4 {
+        font-size: 1rem;
+    }
+
+    .box p {
+        font-size: 0.8rem;
+    }
+
+    .box>div {
+        overflow: hidden;
+    }
+
+    @keyframes scooty {
+        0% {
+            transform: translateX(-30px);
+        }
+
+        100% {
+            transform: translate(350px);
+        }
+    }
+
+
+    /* SHOP */
+
+    .shop {
+        min-height: 110vh;
+        gap: 20px;
+        padding-bottom: 30px;
+        justify-content: unset;
+        scroll-margin-top: 75px;
+    }
+
+    .shop>div {
+        justify-content: center;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .shopFooter {
+        align-self: unset;
+    }
+
+    .shopFooter p {
+        display: none;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        scroll-margin-top: 72px;
+    }
+
+    .contact>div {
+        min-width: 10%;
+    }
+
+    .footer3 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer1 img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact h2 {
+        font-size: 1rem;
+    }
+
+    .contact p {
+        font-size: 0.9rem;
+    }
+
+    .footer3 p {
+        font-size: 0.9rem;
+    }
+
+    .contact i {
+        font-size: 1.2rem;
+    }
+
+    .footer3>div {
+        display: flex;
+        gap: 3px;
+    }
+
+    .information img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .follow>div {
+        display: flex;
+        gap: 20px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+
+
+    /* CONTACT */
+
+    .contact {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        scroll-margin-top: 72px;
+        padding: 7%;
+    }
+
+    .footer1 {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .footer2,
+    .footer3 {
+        width: 100% !important;
+        justify-content: start;
+    }
+
+    .footer2 {
+        gap: 25%;
+    }
+
+    .footer3 {
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .footer1 img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .contact h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .footer3 p {
+        font-size: 1rem;
+    }
+
+    .contact i {
+        font-size: 1.4rem;
+    }
+
+    .footer3>div {
+        display: flex;
+        gap: 3px;
+    }
+
+    .information img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .follow>div {
+        display: flex;
+        gap: 20px;
+    }
 }
