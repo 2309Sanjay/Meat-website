@@ -1727,8 +1727,8 @@ section>div>h1 {
     /* SHOP */
 
     .shop {
-        min-height: 110vh;
-        gap: 20px;
+        min-height: 50vh;
+        gap: 50px;
         padding-bottom: 30px;
         justify-content: unset;
         scroll-margin-top: 75px;
@@ -1736,7 +1736,7 @@ section>div>h1 {
 
     .shop>div {
         justify-content: center;
-        gap: 20px;
+        gap: 50px;
         flex-direction: row;
         flex-wrap: wrap;
     }
